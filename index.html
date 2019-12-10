@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='sourceType:webcam;'>
+        <!-- <a-assets>
+          <a-asset-item id="peppermintcandy-obj" src="models/peppermintCandy.obj"></a-asset-item>
+          <a-asset-item id="peppermintcandy-mtl" src="models/peppermintCandy.mtl"></a-asset-item>
+        </a-assets> -->
+      <!-- define a camera which will move according to the marker position -->
+      <a-marker preset='hiro'>
+          <!-- <a-assets>
+              <a-asset-item id="peppermintcandy-obj" src="./peppermintCandy.obj"></a-asset-item>
+              <a-asset-item id="peppermintcandy-mtl" src="./peppermintCandy.mtl"></a-asset-item>
+              <a-obj-model src="#peppermintcandy-obj" mtl="#peppermintcandy-mtl"></a-obj-model>
+          </a-assets> -->
+            
+            <a-sphere position="0 0.5 -3" radius="0.4" color="#EF2D5E"shawdow ></a-sphere>
+            <a-cylinder position="0 0.5 -3" radius="0.41" height="0.2" color="#EF2D5E" shadow></a-cylinder>
+            <a-cylinder position="0 1.5 -3" radius="0.05" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- candy 2 -->
+            <a-sphere position="1 0.5 -3" radius="0.4" color="#33FFFF"></a-sphere>
+            <a-cylinder position="1 0.5 -3" radius="0.41" height="0.2" color="#33FFFF"></a-cylinder>
+            <a-cylinder position="1 1.5 -3" radius="0.05" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- candy 3 -->
+            <a-sphere position="-1 0.5 -3" radius="0.4" color="#FF99CC"></a-sphere>
+            <a-cylinder position="-1 0.5 -3" radius="0.41" height="0.2" color="#FF99CC"></a-cylinder>
+            <a-cylinder position="-1 1.5 -3" radius="0.05" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- candy 4 -->
+            <a-sphere position="-1 0.5 -2" radius="0.4" color="#99FF99"></a-sphere>
+            <a-cylinder position="-1 0.5 -2" radius="0.41" height="0.2" color="#99FF99"></a-cylinder>
+            <a-cylinder position="-1 1.5 -2" radius="0.05" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- candy 5 -->
+            <a-sphere position="0 0.5 -2" radius="0.4" color="#33FFFF"></a-sphere>
+            <a-cylinder position="0 0.5 -2" radius="0.41" height="0.2" color="#33FFFF"></a-cylinder>
+            <a-cylinder position="0 1.5 -2" radius="0.05" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- candy 6 -->
+            <a-sphere position="1 0.5 -2" radius="0.4" color="#FF9933" shadow></a-sphere>
+            <a-cylinder position="1 0.5 -2" radius="0.41" height="0.2" color="#FF9933" shadow></a-cylinder>
+            <a-cylinder position="1 1.5 -2" radius="0.05" height="1.5" color="#FFC65D" shadow></a-cylinder> 
+            <!-- candy 7 -->
+            <a-sphere position="-1 0.5 -1" radius="0.4" color="#EF2D5E" shadow></a-sphere>
+            <a-cylinder position="-1 0.5 -1" radius="0.41" height="0.2" color="#EF2D5E" shadow></a-cylinder>
+            <a-cylinder position="-1 1.5 -1" radius="0.05" height="1.5" color="#FFC65D" shadow></a-cylinder>
+            <!-- candy 5 -->
+            <a-sphere position="0 0.5 -1" radius="0.4" color="#99FF99" shadow></a-sphere>
+            <a-cylinder position="0 0.5 -1" radius="0.41" height="0.2" color="#99FF99" shadow></a-cylinder>
+            <a-cylinder position="0 1.5 -1" radius="0.05" height="1.5" color="#FFC65D" shadow></a-cylinder>
+            <!-- candy 6 -->
+            <a-sphere position="1 0.5 -1" radius="0.4" color="#33FFFF" shadow></a-sphere>
+            <a-cylinder position="1 0.5 -1" radius="0.41" height="0.2" color="#33FFFF" shadow></a-cylinder>
+            <a-cylinder position="1 1.5 -1" radius="0.05" height="1.5" color="#FFC65D" shadow></a-cylinder>
+          </a-marker>
+
+          <a-marker preset='kanji'>
+            <!-- <a-box position='0 0.5 0' material='color: red'></a-box> -->
+                <a-asset-item id="peppermintcandy-obj" src="./peppermintCandy.obj"></a-asset-item>
+                <a-asset-item id="peppermintcandy-mtl" src="./peppermintCandy.mtl"></a-asset-item>
+                <a-obj-model src="#peppermintcandy-obj" mtl="#peppermintcandy-mtl"></a-obj-model>
+          </a-marker>
+
+          <!-- <a-marker-camera preset="hiro"> -->
+          <!-- <a-marker-camera type= 'candyvendor' patternUrl='./pattern-candyvendor.patt'> -->
+            <!-- <a-box position="0 0.5 -3" side="1" color="#EF2D5E" shadow></a-sphere> -->
+            <!-- <a-cylinder position="0 0.5 -3" radius="0.41" height="0.2" color="#EF2D5E" shadow></a-cylinder> -->
+            <!-- <a-cylinder position="0 1.5 -3" radius="0.05" height="1.5" color="#FFC65D" shadow></a-cylinder> -->
+          <!-- </a-marker-camera> -->
+      <a-entity-camera></a-entity-camera>
+  
+    </a-scene>
+  </body>
+</html>
